@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circuit Breaker - Privacy & Support</title>
+    <title>Circuit Breaker - Privacy, Support & License</title>
     <style>
         * {
             margin: 0;
@@ -21,7 +21,7 @@
         }
         
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.95);
             border-radius: 12px;
@@ -30,17 +30,54 @@
         }
         
         h1 {
-            color: #00ffff;
+            color: #2C3E50;
             margin-bottom: 10px;
             font-size: 2.5em;
         }
         
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            flex-wrap: wrap;
+        }
+        
+        .nav-links a {
+            color: #0066CC;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1em;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        
+        .nav-links a:hover {
+            background: #f0f0f0;
+            text-decoration: none;
+        }
+        
         h2 {
-            color: #0B1420;
-            margin-top: 40px;
+            color: #2C3E50;
+            margin-top: 50px;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #00ffff;
+            border-bottom: 2px solid #0066CC;
+            scroll-margin-top: 20px;
+        }
+        
+        h3 {
+            color: #2C3E50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
         }
         
         p {
@@ -48,13 +85,14 @@
             color: #444;
         }
         
-        ul {
-            margin-left: 20px;
+        ul, ol {
+            margin-left: 25px;
             margin-bottom: 15px;
         }
         
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            color: #444;
         }
         
         .contact {
@@ -64,72 +102,163 @@
             margin-top: 20px;
         }
         
+        .contact a {
+            color: #0066CC;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact a:hover {
+            color: #0052A3;
+            text-decoration: underline;
+        }
+        
         a {
-            color: #00ffff;
+            color: #0066CC;
             text-decoration: none;
         }
         
         a:hover {
+            color: #0052A3;
             text-decoration: underline;
+        }
+        
+        .license-section {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0066CC;
+            margin-top: 20px;
+        }
+        
+        .license-section h3 {
+            margin-top: 0;
         }
         
         .last-updated {
             color: #666;
             font-size: 0.9em;
-            margin-top: 30px;
+            margin-top: 40px;
             font-style: italic;
+            text-align: center;
+        }
+        
+        strong {
+            color: #2C3E50;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Circuit Breaker</h1>
-        <p style="color: #666; margin-bottom: 30px;">Privacy Policy & Support</p>
+        <p class="subtitle">Privacy Policy, Support & License</p>
         
-        <h2>Privacy Policy</h2>
-        <p><strong>Last Updated:</strong> [12/20/2025]</p>
+        <nav class="nav-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#support">Support</a>
+            <a href="#license">License</a>
+        </nav>
         
-        <h3>Data Collection</h3>
-        <p>Circuit Breaker collects minimal data necessary for leaderboard functionality:</p>
-        <ul>
-            <li><strong>Username:</strong> Optional name you choose when submitting a score</li>
-            <li><strong>Game Statistics:</strong> Score, level reached, max combo, survival time, and game mode (Normal/Hard/Zen)</li>
-        </ul>
+        <section id="privacy">
+            <h2>Privacy Policy</h2>
+            <p><strong>Last Updated:</strong> December 20, 2025</p>
+            
+            <h3>Data Collection</h3>
+            <p>Circuit Breaker collects minimal data necessary for leaderboard functionality:</p>
+            <ul>
+                <li><strong>Username:</strong> Optional name you choose when submitting a score (or "Anonymous" if left blank)</li>
+                <li><strong>Game Statistics:</strong> Score, level reached, max combo, survival time, and game mode (Normal/Hard/Zen)</li>
+            </ul>
+            
+            <h3>How We Use Your Data</h3>
+            <p>Your data is used solely for:</p>
+            <ul>
+                <li>Displaying leaderboard rankings</li>
+                <li>Allowing you to compete with other players</li>
+            </ul>
+            
+            <h3>Data Storage</h3>
+            <p>All data is stored in Supabase, a third-party database service. We do not share your data with any other parties.</p>
+            
+            <h3>Your Rights</h3>
+            <p>You can choose to submit your score or not, using a real or fake name. Submitted data is publicly visible on the leaderboard as part of the game's competitive features.</p>
+            
+            <h3>Children's Privacy</h3>
+            <p>Circuit Breaker does not knowingly collect personal information from children under 13. If you believe we have collected such information, please contact us.</p>
+            
+            <h3>Changes to This Policy</h3>
+            <p>We may update this privacy policy from time to time. The "Last Updated" date at the top will reflect any changes.</p>
+        </section>
         
-        <h3>How We Use Your Data</h3>
-        <p>Your data is used solely for:</p>
-        <ul>
-            <li>Displaying leaderboard rankings</li>
-            <li>Allowing you to compete with other players</li>
-        </ul>
+        <section id="support">
+            <h2>Support</h2>
+            <p>Need help or have questions about Circuit Breaker?</p>
+            
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>For support, bug reports, or questions:</p>
+                <p>Email: <a href="mailto:circuitbreakergame@proton.me">circuitbreakergame@proton.me</a></p>
+            </div>
+            
+            <h3>Frequently Asked Questions</h3>
+            <ul>
+                <li><strong>How do I submit a score?</strong> After a game ends, enter your name (or leave blank for anonymous) and tap "Submit Score to Leaderboard".</li>
+                <li><strong>Can I delete my score?</strong> Currently, scores cannot be deleted once submitted. This may be added in a future update.</li>
+                <li><strong>Why don't I see my score?</strong> Only the top scores are displayed on the leaderboard. Keep playing to improve your rank!</li>
+            </ul>
+        </section>
         
-        <h3>Data Storage</h3>
-        <p>All data is stored in Supabase, a third-party database service. We do not share your data with any other parties.</p>
-        
-        <h3>Your Rights</h3>
-        <p>You are not required to submit leaderboard scores. All submitted leaderboard data is publicly visible on the leaderboard as part of the game's competitive features.</p>
-        
-        <h3>Children's Privacy</h3>
-        <p>Circuit Breaker does not knowingly collect personal information from children under 13. If you believe we have collected such information, please contact us.</p>
-        
-        <h3>Changes to This Policy</h3>
-        <p>We may update this privacy policy from time to time. The "Last Updated" date at the top will reflect any changes.</p>
-        
-        <h2>Support</h2>
-        <p>Need help or have questions about Circuit Breaker?</p>
-        
-        <div class="contact">
-            <h3>Contact Us</h3>
-            <p>For support, bug reports, or questions:</p>
-            <p>Email: <a href="mailto:[circuitbreakergame@proton.me]">[circuitbreakergame@proton.me]</a></p>
-        </div>
-        
-        <h3>Frequently Asked Questions</h3>
-        <ul>
-            <li><strong>How do I submit a score?</strong> After a game ends, enter your name (or leave blank for anonymous) and tap "Submit Score to Leaderboard".</li>
-            <li><strong>Can I delete my score?</strong> Currently, scores cannot be deleted through the app If you want to delete your score, contact dsvibes@protonmail.com.</li>
-            <li><strong>Why don't I see my score?</strong> Only the top scores are displayed on the leaderboard. Keep playing to improve your rank!</li>
-        </ul>
+        <section id="license">
+            <h2>Software License Agreement</h2>
+            <p><strong>Circuit Breaker iOS</strong></p>
+            <p>Copyright (c) 2025 Derek Schwede. All rights reserved.</p>
+            
+            <div class="license-section">
+                <h3>1. License Grant</h3>
+                <p>This software and associated documentation files (the "Software") are proprietary and confidential. Subject to your compliance with the terms of this agreement, you are granted a limited, non-exclusive, non-transferable, revocable license to use the Software solely for your personal, non-commercial use.</p>
+            </div>
+            
+            <div class="license-section">
+                <h3>2. License Limits and Restrictions</h3>
+                <p>You may NOT:</p>
+                <ul>
+                    <li>Copy, modify, adapt, translate, or create derivative works of the Software</li>
+                    <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the Software</li>
+                    <li>Remove, alter, or obscure any proprietary notices, labels, or marks on the Software</li>
+                    <li>Rent, lease, lend, sell, sublicense, assign, distribute, or otherwise transfer the Software or any rights granted hereunder</li>
+                    <li>Use the Software for any commercial purpose</li>
+                    <li>Use the Software in any way that violates applicable laws or regulations</li>
+                </ul>
+                <p>All rights not expressly granted are reserved. Derek Schwede owns all right, title and interest (including IP rights) in and to this app.</p>
+            </div>
+            
+            <div class="license-section">
+                <h3>3. Disclaimers</h3>
+                <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. THE SOFTWARE MAY CONTAIN ERRORS, BUGS, OR OTHER DEFECTS. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS WITH YOU.</p>
+                <p>NO WARRANTY IS MADE THAT THE SOFTWARE WILL MEET YOUR REQUIREMENTS, OPERATE UNINTERRUPTED, BE ERROR-FREE, OR THAT DEFECTS WILL BE CORRECTED.</p>
+            </div>
+            
+            <div class="license-section">
+                <h3>4. Limitation of Liability</h3>
+                <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+                <p>IN NO EVENT SHALL THE TOTAL LIABILITY OF THE COPYRIGHT HOLDER EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE, OR IF THE SOFTWARE WAS PROVIDED FREE OF CHARGE, THE LIABILITY SHALL BE LIMITED TO FIVE DOLLARS ($5.00).</p>
+            </div>
+            
+            <div class="license-section">
+                <h3>5. Governing Law</h3>
+                <p>This license agreement shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of law provisions. Any disputes arising under or in connection with this agreement shall be subject to the exclusive jurisdiction of the courts located in San Francisco, California.</p>
+            </div>
+            
+            <div class="license-section">
+                <h3>6. Termination</h3>
+                <p>This license is effective until terminated. We may terminate your rights at any time. Your rights under this license will terminate automatically without notice if you fail to comply with any of its terms. Upon termination, you must cease all use of the Software and destroy all copies in your possession.</p>
+            </div>
+            
+            <div class="license-section">
+                <h3>7. Entire Agreement</h3>
+                <p>This agreement constitutes the entire agreement between you and the copyright holder regarding the Software and supersedes all prior or contemporaneous communications, proposals, and agreements relating to the subject matter hereof.</p>
+            </div>
+        </section>
         
         <p class="last-updated">Thank you for playing Circuit Breaker!</p>
     </div>
